@@ -9,24 +9,25 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-papb8Vx+2B0e1qJGl9jT3w6KG4K+CmQX7jxPMSX5Rp2LBYBo1hc8oVpe/LM5PcWV57Zb/sHWcsS6svvCK+PTig=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
 </head>
 <body>
-  <header class="header" role="banner">
+  <header class="header" id="header">
     <div class="container">
       <h1 tabindex="0">Chiranjeevi Thirunagari</h1>
-      <p class="subtitle">Java Full Stack Developer</p>
-      <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <nav class="navbar" role="navigation" aria-label="Primary">
         <ul>
-          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#about" class="nav-link active">About Me</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <a href="Chiranjeevi_Resume.pdf" download class="btn-resume" aria-label="Download Resume">Download Resume <i class="fa-solid fa-file-arrow-down"></i></a>
+      <a href="Chiranjeevi_Resume.pdf" download class="btn-resume" aria-label="Download Resume">
+        Download Resume <i class="fa-solid fa-file-arrow-down"></i>
+      </a>
     </div>
   </header>
 
@@ -34,11 +35,16 @@
     <section id="about" aria-labelledby="about-title" class="section fade-in">
       <h2 id="about-title">About Me</h2>
       <p>
-        I am a passionate Java Full Stack Developer with over 5 years of experience designing, developing, and deploying robust, scalable, and secure web applications. My expertise includes
-        <strong>Java, Spring Boot, React.js, Angular</strong>, and cloud platforms like <strong>AWS</strong> and <strong>Azure</strong>. I am dedicated to clean, maintainable code and continuous learning.
+        I am a dedicated and results-driven Java Full Stack Developer with over 5 years of professional experience designing, developing, and deploying scalable, secure, and high-performance web applications. My expertise spans across the full software development lifecycle — from requirement analysis and design to implementation, testing, deployment, and maintenance.
       </p>
       <p>
-        Skilled in microservices, REST APIs, JWT/OAuth2 security, containerization with Docker and Kubernetes, and CI/CD pipelines. I aim to build solutions that solve real business challenges efficiently.
+        Proficient in backend technologies such as <strong>Java, Spring Boot, Hibernate</strong>, and messaging systems like Kafka and RabbitMQ, I build resilient microservices and RESTful APIs that meet complex business requirements. On the frontend, I specialize in building dynamic, responsive user interfaces using <strong>React.js, Angular, TypeScript</strong>, and modern UI libraries like Material-UI and Bootstrap.
+      </p>
+      <p>
+        I have hands-on experience with cloud platforms including <strong>AWS and Azure</strong>, container orchestration using <strong>Docker and Kubernetes</strong>, and continuous integration and deployment pipelines using Jenkins and GitHub Actions. I follow best coding practices, design patterns, and participate actively in Agile teams with collaborative code reviews.
+      </p>
+      <p>
+        With strong problem-solving skills, attention to detail, and a business-first mindset, I strive to deliver technically robust, scalable solutions aligned with organizational goals. I continuously learn and adapt emerging technologies to provide innovative and efficient software.
       </p>
     </section>
 
@@ -49,77 +55,61 @@
           <h3>Backend</h3>
           <ul>
             <li>Java 8+, Spring Boot, Hibernate ORM</li>
-            <li>Kafka, Redis, RabbitMQ</li>
-            <li>OAuth2, JWT Security</li>
+            <li>Microservices, Kafka, RabbitMQ, Redis</li>
+            <li>REST APIs, SOAP, OAuth2, JWT Security</li>
             <li>Oracle, MongoDB, MySQL, SQL Server</li>
+            <li>Design Patterns: MVC, Singleton, DAO, Factory</li>
           </ul>
-          <div class="skill-bars">
-            <div>
-              <label>Java & Spring Boot</label>
-              <progress value="90" max="100">90%</progress>
-            </div>
-            <div>
-              <label>Microservices & Messaging</label>
-              <progress value="80" max="100">80%</progress>
-            </div>
-            <div>
-              <label>Databases</label>
-              <progress value="85" max="100">85%</progress>
-            </div>
-          </div>
         </div>
         <div class="skill-category">
           <h3>Frontend</h3>
           <ul>
-            <li>React.js, Angular, TypeScript</li>
+            <li>React.js, Angular 8+, TypeScript</li>
             <li>Redux, NgRx, Material-UI, Bootstrap</li>
-            <li>WebSockets & Responsive Design</li>
-            <li>HTML5, CSS3, SCSS</li>
+            <li>WebSockets, Responsive Design, CSS3, SCSS</li>
+            <li>HTML5, JavaScript (ES6+)</li>
           </ul>
-          <div class="skill-bars">
-            <div>
-              <label>React & Angular</label>
-              <progress value="88" max="100">88%</progress>
-            </div>
-            <div>
-              <label>State Management</label>
-              <progress value="80" max="100">80%</progress>
-            </div>
-            <div>
-              <label>UI/UX & Responsive Design</label>
-              <progress value="90" max="100">90%</progress>
-            </div>
-          </div>
         </div>
         <div class="skill-category">
           <h3>DevOps & Tools</h3>
           <ul>
-            <li>Docker, Kubernetes, AWS (EKS, EC2, S3)</li>
+            <li>Docker, Kubernetes (EKS, AKS)</li>
+            <li>AWS (EC2, S3, Lambda), Azure DevOps</li>
             <li>JUnit, Mockito, Jest, React Testing Library</li>
             <li>Git, GitHub, Jenkins, CI/CD Pipelines</li>
-            <li>Jira, Agile & Scrum</li>
+            <li>Jira, Agile, Scrum</li>
           </ul>
-          <div class="skill-bars">
-            <div>
-              <label>Containerization & Cloud</label>
-              <progress value="85" max="100">85%</progress>
-            </div>
-            <div>
-              <label>Testing & Automation</label>
-              <progress value="80" max="100">80%</progress>
-            </div>
-            <div>
-              <label>Version Control & CI/CD</label>
-              <progress value="90" max="100">90%</progress>
-            </div>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title" class="section fade-in">
+      <h2 id="projects-title">Projects</h2>
+
+      <div class="project">
+        <button class="project-toggle" aria-expanded="false" aria-controls="proj1-desc">
+          <strong>Digital Banking Transformation Platform (Bank of America)</strong>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div id="proj1-desc" class="project-desc" hidden>
+          A critical system modernizing digital banking services by handling payment processing, account management, and real-time transaction monitoring. Built with Java Spring Boot, React, Kafka, Redis, and deployed on AWS EKS.
+        </div>
+      </div>
+
+      <div class="project">
+        <button class="project-toggle" aria-expanded="false" aria-controls="proj2-desc">
+          <strong>Static Data Workflow Tool (SDWT) (DBS Bank)</strong>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div id="proj2-desc" class="project-desc" hidden>
+          Workflow automation for bond management integrated with Kafka and WebSockets, developed using React and Spring Boot to enable seamless real-time data processing.
         </div>
       </div>
     </section>
 
     <section id="contact" aria-labelledby="contact-title" class="section fade-in">
       <h2 id="contact-title">Contact Me</h2>
-      <p>If you'd like to discuss opportunities, projects, or connect, please reach out!</p>
+      <p>If you'd like to discuss opportunities or projects, please feel free to reach out.</p>
       <ul class="contact-list">
         <li><i class="fa-solid fa-envelope"></i> <a href="mailto:chiranjeevi.thirunagari@gmail.com">chiranjeevi.thirunagari@gmail.com</a></li>
         <li><i class="fa-solid fa-phone"></i> <a href="tel:+14055057914">405-505-7914</a></li>
@@ -127,41 +117,75 @@
         <li><i class="fa-brands fa-github"></i> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></li>
       </ul>
     </section>
-
   </main>
 
   <button id="topBtn" aria-label="Back to top" title="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
-  <footer role="contentinfo" class="footer">
-    <div class="container">
-      <p>© 2025 Chiranjeevi Thirunagari. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>© 2025 Chiranjeevi Thirunagari. All rights reserved.</p>
   </footer>
 
   <script>
-    // Smooth scrolling for nav links
+    // Smooth scroll for nav links
     document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', (e) => {
+      link.addEventListener('click', e => {
         e.preventDefault();
         document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
       });
     });
 
+    // Highlight nav on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 90;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
     // Back to top button
     const topBtn = document.getElementById('topBtn');
-
-    window.onscroll = function () {
+    window.onscroll = () => {
       if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        topBtn.style.display = "block";
+        topBtn.style.display = 'block';
       } else {
-        topBtn.style.display = "none";
+        topBtn.style.display = 'none';
       }
     };
-
     topBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Project toggles
+    document.querySelectorAll('.project-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const descId = btn.getAttribute('aria-controls');
+        const desc = document.getElementById(descId);
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        btn.setAttribute('aria-expanded', String(!isExpanded));
+        if (isExpanded) {
+          desc.hidden = true;
+          btn.querySelector('i').classList.replace('fa-chevron-up', 'fa-chevron-down');
+        } else {
+          desc.hidden = false;
+          btn.querySelector('i').classList.replace('fa-chevron-down', 'fa-chevron-up');
+        }
+      });
     });
   </script>
 </body>
