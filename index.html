@@ -14,22 +14,29 @@
   />
 </head>
 <body>
-  <header class="header" id="header">
-    <div class="container">
-      <h1 tabindex="0">Chiranjeevi Thirunagari</h1>
-      <nav class="navbar" role="navigation" aria-label="Primary">
-        <ul>
-          <li><a href="#about" class="nav-link active">About Me</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="Chiranjeevi_Resume.pdf" download class="btn-resume" aria-label="Download Resume">
-        Download Resume <i class="fa-solid fa-file-arrow-down"></i>
-      </a>
+ <header class="header" id="header">
+  <div class="container header-container">
+    <div class="header-left">
+      <img src="profile.png" alt="Chiranjeevi Thirunagari" class="profile-photo" />
+      <div class="header-text">
+        <h1 tabindex="0">Chiranjeevi Thirunagari</h1>
+        <p>Java Full Stack Developer</p>
+      </div>
     </div>
-  </header>
+    <nav class="navbar" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="#about" class="nav-link active">About Me</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="Chiranjeevi_Resume.pdf" download class="btn-resume" aria-label="Download Resume">
+      Download Resume <i class="fa-solid fa-file-arrow-down"></i>
+    </a>
+  </div>
+</header>
+
 
   <main class="container" role="main" tabindex="-1">
     <section id="about" aria-labelledby="about-title" class="section fade-in">
@@ -83,29 +90,14 @@
       </div>
     </section>
 
-    <section id="projects" aria-labelledby="projects-title" class="section fade-in">
-      <h2 id="projects-title">Projects</h2>
-
-      <div class="project">
-        <button class="project-toggle" aria-expanded="false" aria-controls="proj1-desc">
-          <strong>Digital Banking Transformation Platform (Bank of America)</strong>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div id="proj1-desc" class="project-desc" hidden>
-          A critical system modernizing digital banking services by handling payment processing, account management, and real-time transaction monitoring. Built with Java Spring Boot, React, Kafka, Redis, and deployed on AWS EKS.
-        </div>
-      </div>
-
-      <div class="project">
-        <button class="project-toggle" aria-expanded="false" aria-controls="proj2-desc">
-          <strong>Static Data Workflow Tool (SDWT) (DBS Bank)</strong>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div id="proj2-desc" class="project-desc" hidden>
-          Workflow automation for bond management integrated with Kafka and WebSockets, developed using React and Spring Boot to enable seamless real-time data processing.
-        </div>
-      </div>
-    </section>
+    <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Digital Banking Transformation Platform</strong> - A mission-critical platform at Bank of America designed to modernize digital banking services for millions of customers. It handles payment processing, account management, and real-time transaction monitoring to deliver a seamless and secure banking experience. Built with Java Spring Boot microservices on the backend and React on the frontend, with real-time updates powered by Kafka and WebSockets. The platform is containerized with Docker and deployed on AWS Elastic Kubernetes Service (EKS) for high scalability and availability. Performance optimizations include Redis caching to reduce database load and secure access using Spring Security with OAuth2/JWT.
+      </li>
+    </ul>
+  </section>
 
     <section id="contact" aria-labelledby="contact-title" class="section fade-in">
       <h2 id="contact-title">Contact Me</h2>
