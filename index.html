@@ -6,79 +6,163 @@
   <title>Chiranjeevi Thirunagari | Java Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papb8Vx+2B0e1qJGl9jT3w6KG4K+CmQX7jxPMSX5Rp2LBYBo1hc8oVpe/LM5PcWV57Zb/sHWcsS6svvCK+PTig=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
-  <header>
-    <h1>Chiranjeevi Thirunagari</h1>
-    <p class="subtitle">Java Full Stack Developer</p>
+  <header class="header" role="banner">
+    <div class="container">
+      <h1 tabindex="0">Chiranjeevi Thirunagari</h1>
+      <p class="subtitle">Java Full Stack Developer</p>
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="Chiranjeevi_Resume.pdf" download class="btn-resume" aria-label="Download Resume">Download Resume <i class="fa-solid fa-file-arrow-down"></i></a>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Passionate Java Full Stack Developer with 5+ years of experience
-      designing and building scalable, secure web applications using
-      Java, Spring Boot, React, Angular, and modern technologies.
-    </p>
-  </section>
+  <main class="container" role="main" tabindex="-1">
+    <section id="about" aria-labelledby="about-title" class="section fade-in">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        I am a passionate Java Full Stack Developer with over 5 years of experience designing, developing, and deploying robust, scalable, and secure web applications. My expertise includes
+        <strong>Java, Spring Boot, React.js, Angular</strong>, and cloud platforms like <strong>AWS</strong> and <strong>Azure</strong>. I am dedicated to clean, maintainable code and continuous learning.
+      </p>
+      <p>
+        Skilled in microservices, REST APIs, JWT/OAuth2 security, containerization with Docker and Kubernetes, and CI/CD pipelines. I aim to build solutions that solve real business challenges efficiently.
+      </p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3>Backend</h3>
-        <ul>
-          <li><strong>Java</strong>, Spring Boot, Hibernate</li>
-          <li>Kafka, Redis, REST APIs</li>
-          <li>OAuth2, JWT Security</li>
-          <li>Oracle, MongoDB, MySQL</li>
-        </ul>
+    <section id="skills" aria-labelledby="skills-title" class="section fade-in">
+      <h2 id="skills-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>Java 8+, Spring Boot, Hibernate ORM</li>
+            <li>Kafka, Redis, RabbitMQ</li>
+            <li>OAuth2, JWT Security</li>
+            <li>Oracle, MongoDB, MySQL, SQL Server</li>
+          </ul>
+          <div class="skill-bars">
+            <div>
+              <label>Java & Spring Boot</label>
+              <progress value="90" max="100">90%</progress>
+            </div>
+            <div>
+              <label>Microservices & Messaging</label>
+              <progress value="80" max="100">80%</progress>
+            </div>
+            <div>
+              <label>Databases</label>
+              <progress value="85" max="100">85%</progress>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>React.js, Angular, TypeScript</li>
+            <li>Redux, NgRx, Material-UI, Bootstrap</li>
+            <li>WebSockets & Responsive Design</li>
+            <li>HTML5, CSS3, SCSS</li>
+          </ul>
+          <div class="skill-bars">
+            <div>
+              <label>React & Angular</label>
+              <progress value="88" max="100">88%</progress>
+            </div>
+            <div>
+              <label>State Management</label>
+              <progress value="80" max="100">80%</progress>
+            </div>
+            <div>
+              <label>UI/UX & Responsive Design</label>
+              <progress value="90" max="100">90%</progress>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>DevOps & Tools</h3>
+          <ul>
+            <li>Docker, Kubernetes, AWS (EKS, EC2, S3)</li>
+            <li>JUnit, Mockito, Jest, React Testing Library</li>
+            <li>Git, GitHub, Jenkins, CI/CD Pipelines</li>
+            <li>Jira, Agile & Scrum</li>
+          </ul>
+          <div class="skill-bars">
+            <div>
+              <label>Containerization & Cloud</label>
+              <progress value="85" max="100">85%</progress>
+            </div>
+            <div>
+              <label>Testing & Automation</label>
+              <progress value="80" max="100">80%</progress>
+            </div>
+            <div>
+              <label>Version Control & CI/CD</label>
+              <progress value="90" max="100">90%</progress>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="skill-category">
-        <h3>Frontend</h3>
-        <ul>
-          <li>React.js, Angular, TypeScript</li>
-          <li>Redux, Material-UI, WebSockets</li>
-          <li>HTML5, CSS3, Bootstrap</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>DevOps & Tools</h3>
-        <ul>
-          <li>Docker, Kubernetes, AWS (EKS, EC2, S3)</li>
-          <li>JUnit, Mockito, Jest, React Testing Library</li>
-          <li>Git, GitHub, Jenkins, CI/CD</li>
-        </ul>
-      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title" class="section fade-in">
+      <h2 id="contact-title">Contact Me</h2>
+      <p>If you'd like to discuss opportunities, projects, or connect, please reach out!</p>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:chiranjeevi.thirunagari@gmail.com">chiranjeevi.thirunagari@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i> <a href="tel:+14055057914">405-505-7914</a></li>
+        <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/chiranjeevi-thirunagari-909030203/" target="_blank" rel="noopener noreferrer">linkedin.com/in/chiranjeevi-thirunagari-909030203/</a></li>
+        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <button id="topBtn" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <footer role="contentinfo" class="footer">
+    <div class="container">
+      <p>© 2025 Chiranjeevi Thirunagari. All rights reserved.</p>
     </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul class="projects-list">
-      <li>
-        <strong>Digital Banking Transformation Platform</strong> – A critical
-        system at Bank of America that modernizes digital banking services,
-        handling payment processing, account management, and real-time
-        transaction monitoring. Built with Java Spring Boot, React,
-        Kafka, Redis, and deployed on AWS EKS.
-      </li>
-      <li>
-        <strong>Static Data Workflow Tool</strong> – Workflow automation for bond
-        management integrated with Kafka and WebSockets, using React and Spring Boot.
-      </li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:chiranjeevi.thirunagari@gmail.com">chiranjeevi.thirunagari@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/chiranjeevi-thirunagari-909030203/" target="_blank">linkedin.com/in/chiranjeevi-thirunagari-909030203/</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Chiranjeevi Thirunagari. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Back to top button
+    const topBtn = document.getElementById('topBtn');
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
