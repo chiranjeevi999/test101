@@ -272,3 +272,25 @@ h2 {
     max-width: 100%;
   }
 }
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* circular image */
+  object-fit: cover;
+  flex-shrink: 0; /* prevent shrinking */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
